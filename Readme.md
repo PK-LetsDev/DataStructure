@@ -11,7 +11,7 @@ This project was created to:
 
 ### *Description*
 
-This section explains how the code works.Let's get started.
+This section explains how the code works.
 
 #### *First (What is Stack Algorithm?)*
 
@@ -32,8 +32,39 @@ Peek: We can view the most recent item in the stack by using the value of a poin
 
 This is the sample code.
 
-![Image!](ClassStack.png)
+![Image!](Image/ClassStack.png)
 
 And this is result
 
-![Image!](ResultStack.png)
+![Image!](Image/ResultStack.png)
+
+#### *Second (How does Bracket Check work?)*
+
+Now that you understand how Stack Algorithms work, let's get started.
+
+1. is_error is used to store information about whether the verification has an error or not, and location is used to store the location where the error occurred, if any.
+
+![Image!](Image/Checkbracket-1.png)
+
+2. Loop every character in the string "str" using "for i in range(len(str))", storing them in the variable "s".
+
+![Image!](Image/Checkbracket-2.png)
+
+3. For each character, the code checks the correctness of the parentheses:
+    - If the variable "s" is {, [ or (), push() the variable "s" onto the stack using "stack.push(s)" to preserve the open parentheses.
+
+    - If the variable "s" is }, ] or ) the code checks if the stack is not empty (not empty means there is an open parenthesis) and pops the characters on the stack using stack.pop(. ) and store in variable "p".
+
+    - If the stack is empty, meaning there is no opening parenthesis paired with the closing parenthesis, "is_error" will be True.
+
+    - After that, the code checks that "p" and "s" are matched correctly. This means if "p" is { and "s" is } or "p" is [ and "s" is ] or "p" is ( and "s" is ) in this case no action is taken, but if No, "is_error" will be True and the location "i" where the error occurred will be added to "location".
+
+![Image!](Image/Checkbracket-3.png)
+
+
+4. After the loop finishes, the code checks if the stack is empty. If it is not empty, it means that there are open parentheses that are not closed in the string. "is_error" will be True and the last position will be added to "location".
+
+![Image!](Image/Checkbracket-4.png)
+
+5. Finally, the function returns "is_error" and "location" to report the verification result. "is_error" will be True if there is a parenthesis matching error, and "location" will store the location of the error (if any) in a list.
+
