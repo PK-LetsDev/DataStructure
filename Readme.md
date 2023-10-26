@@ -11,7 +11,7 @@ This project was created to:
 
 ### *Description*
 
-This section explains how the code works.
+In this section, we will explain what **Stack Algorithm** is and how the Bracket Check function works and try using **Unit Test** to check for errors.
 
 #### *First (What is Stack Algorithm?)*
 
@@ -67,4 +67,13 @@ Now that you understand how Stack Algorithms work, let's get started.
 ![Image!](Image/Checkbracket-4.png)
 
 5. Finally, the function returns "is_error" and "location" to report the verification result. "is_error" will be True if there is a parenthesis matching error, and "location" will store the location of the error (if any) in a list.
+
+
+#### *Third (What is Unit Test?)*
+
+Unit test (or unit testing) is the process of testing the correctness and performance of computer code. By unit-level testing, we mean that the test focuses on testing small sections or units of code. An instance of a unit can be a function or a small class. That works independently.
+
+Unit tests are often used to validate code by testing one function or class at a time. By sending in test data and inputs and checking the expected results. Unit tests are effective in finding and fixing errors (bugs) in the code when various errors are found and help in maintaining the quality of the code by maintaining the efficiency and correctness of the system.
+
+Okay, now that I've explained the basic meaning of Unit Test, let's take a look at the code and how to use it.
 
