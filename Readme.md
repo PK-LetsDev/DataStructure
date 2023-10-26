@@ -30,6 +30,10 @@ Empty Check: We can check whether the stack is empty or not by checking the valu
 Peek: We can view the most recent item in the stack by using the value of a pointer to point to the item in the list (or array) without deleting the item.
 
 
-And this is the sample code.
+This is the sample code.
 
- [![image][linkToImage]
+![Image!](ClassStack.png)
+
+And this is result
+
+![Image!](ResultStack.png)
