@@ -103,4 +103,9 @@ You can see that the test set I expected to be all 5 functions passed.
 
 ### *Thank you*
 
-Hopefully it will be useful for people who come to watch. If there are any mistakes, please advise me. My name is [Prodev](https://github.com/PK-LetsDev)
+Hopefully it will be useful for people who come to watch. If there are any mistakes, please advise me.
+
+### *Article creator*
+
+[Prodev](https://github.com/PK-LetsDev)
+
